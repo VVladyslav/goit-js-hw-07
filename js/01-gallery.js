@@ -9,6 +9,6 @@ gallery.addEventListener('click', clickHandler);
 function clickHandler (event) {
 event.preventDefault();
 const modalWindowImage = event.target.dataset.source; 
-const instance = basicLightbox.create(`<img src="${modalWindowImage}"/>`);
+const instance = basicLightbox.create(`<img src="${modalWindowImage}" width="800" height="600"/>`);
 instance.show();
 };
