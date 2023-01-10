@@ -5,13 +5,5 @@ const markup = galleryItems.reduce((acc, {original, preview, description}) => ac
 <img class="gallery__image" src="${preview}" alt="${description}"/></a>`,'');
 gallery.insertAdjacentHTML('afterbegin', markup);
 
-gallery.addEventListener('click', clickHandler);
-function clickHandler (event) {
-event.preventDefault();
-const modalWindowImage = event.target.alt;
-let instance = new SimpleLightbox('gallery');
+let instance = new SimpleLightbox('.gallery.gallery a', {captionsData: 'alt' , captionDelay: '250'});
 instance.on(`show.instance`);
-console.log(modalWindowImage);
-console.log(gallery);
-console.log(instance);
-};
