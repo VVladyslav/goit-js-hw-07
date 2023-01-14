@@ -42,8 +42,3 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
-
- .basicLightbox__placeholder {
-  width: 800px;
-  height: 600px;
- }

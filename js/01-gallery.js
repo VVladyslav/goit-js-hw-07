@@ -15,7 +15,7 @@ function clickHandler(event) {
   event.preventDefault();
   const modalWindowImage = event.target.dataset.source;
   const instance = basicLightbox.create(
-    `<img src="${modalWindowImage}" width="800" height="600"/>`
+    `<img src="${modalWindowImage}" style = "width: 800; height: 600">`
   );
   instance.show();
 }
